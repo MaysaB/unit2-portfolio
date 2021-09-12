@@ -7,10 +7,11 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background: #ffffff;
   background-color: #85dcb8;
-  font-size: ;
+  min-height: 100vh; 
+  margin: 0 auto;
   font-size-adjust: inherit;
+  
 }
 .page-header {
   overflow: hidden;
@@ -22,38 +23,41 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
 }
+/*
 .body {
-  min-height: 100vh;
-  max-width: 400px; 
+  min-height: 100vh; 
   margin: 0 auto;
-}
+  font-size-adjust: inherit;
+}*/
 
 .about-me {
-  float: left;
-  width: 40%;
-  padding: 40px;
-  padding-left: 60px;
-  padding-right: 60px;
-  height: 400px;
-  margin:30px;
-  margin-right:30px;
-  margin-bottom: 60px;
-  background-color: #ff9900;
-  line: height 2px;;
-  border: 2px solid #41b3a3;
-  border-radius: 25px;
+  /*float: left;*/
+  display: flex;
+  width: 50%;
+  height: auto;
+  margin: 0 auto; 
 
 }
 
-
+.about-container {
+  padding: 40px 60px;
+  margin:30px 30px 60px;
+  background-color: #ff9900;
+  border: 2px solid #41b3a3;
+  border-radius: 25px;
+}
+/*
+  display:flex;
+  justify-content: space-between;
+*/
 
 
 .profile-img {
     margin: auto;
-    display: block;
-    width: 100%;
-    max-width: 400px;
-    height: auto;
+    /*display: flex;*/
+    width: auto;
+    max-width: 950px;
+    height: calc(200px + 15vw);
 }
 
 .timeline {
@@ -97,7 +101,7 @@ body {
   height: 16px;
   top: calc(50% - 8px);
   right: -8px;
-  background: #41b3a3
+  background: #41b3a3;
   border: 2px solid #41b3a3;
   border-radius: 16px;
   z-index: 1;
